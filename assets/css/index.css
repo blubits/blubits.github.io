@@ -90,3 +90,18 @@ div#specs {
     margin: auto 0;
     opacity: 0.5;
 }
+
+div.icons {
+    display: inline-block;
+    width: 10%;
+}
+
+div.icons img {
+    margin: 10px;
+    width: 50%;
+}
+
+div.icons p {
+    text-align: center;
+    color: #ffffff;
+}
