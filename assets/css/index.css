@@ -1,16 +1,35 @@
-p {
+/**
+ * Global assets
+ */
+
+p.description {
     font-family: 'Lato', sans-serif;
+    color: white;
+    width: 60vw;
+    display: block;
+    margin: 1vh auto;
+    line-height: 165%;
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'LibelSuit-Regular', sans-serif;
     text-transform: uppercase;
 }
+
+/**
+ * Navigation bar
+ */
+
 .navbar {
     margin-bottom: 0;
 }
 
-div#page1{
+/**
+ * Page 1
+ */
+
+div#page1 {
 	background-image: url('../img/background_page1.png');
 	background-size: cover;
 	height: 100vh;
@@ -22,9 +41,9 @@ div#page1 img {
 }
 
 img#iphone {
-    width: 25vh;
+    width: 15vw;
     padding-bottom: 5vh;
-    padding-top: 12.5vh;
+    padding-top: 5vh;
 }
 
 img#sporelogo {
@@ -37,14 +56,30 @@ img#sporecaption {
     padding: 1vh;
 }
 
-div#page2{
+/**
+ * Page 2
+ */
+
+div#page2 {
 	background-image: url('../img/background_page2.png');
 	background-size: cover;
 	height: 40vh;
 }
-div#page3{
+
+div#page2 h1 {
+    color: #FFECA1;
+}
+
+/**
+ * Page 3
+ */
+
+div#page3 {
 	background-image: url('../img/background_page3.png');
 	background-size: cover;
 	height: 60vh;
 }
 
+div#page3 h1 {
+    color: #D6FFB0;
+}
