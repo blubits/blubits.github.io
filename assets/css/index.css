@@ -1,0 +1,19 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+div#sporehook {
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+div#sporehook h1, div#sporehook h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+img#iphone {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
