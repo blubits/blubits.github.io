@@ -13,7 +13,28 @@ h1, h2, h3, h4, h5, h6 {
 div#page1{
 	background-image: url('../img/background_page1.png');
 	background-size: cover;
-	height: 100vh
+	height: 100vh;
+}
+
+div#page1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+img#iphone {
+    width: 25vh;
+    padding-bottom: 5vh;
+    padding-top: 12.5vh;
+}
+
+img#sporelogo {
+    height: 13vh;
+    padding: 1vh;
+}
+
+img#sporecaption {
+    height: 10vh;
+    padding: 1vh;
 }
 
 div#page2{
@@ -27,13 +48,3 @@ div#page3{
 	height: 60vh;
 }
 
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-
-img#iphone {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-}
