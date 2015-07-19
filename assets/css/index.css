@@ -1,12 +1,3 @@
-p {
-    font-family: 'Lato', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'LibelSuit-Regular', sans-serif;
-    text-transform: uppercase;
-}
-
 .navbar {
     margin-bottom: 0;
 }
@@ -14,6 +5,26 @@ h1, h2, h3, h4, h5, h6 {
 div#sporehook {
     background-image: url('../img/background.png');
     background-size: cover;
+}
+div#page1{
+	background-image: url('../img/background_page1.png');
+	background-size: cover;
+	height: 100vh
+}
+div#page2{
+	background-image: url('../img/background_page2.png');
+	background-size: cover;
+	height: 40vh;
+}
+div#page3{
+	background-image: url('../img/background_page3.png');
+	background-size: cover;
+	height: 60vh;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 img#iphone {
