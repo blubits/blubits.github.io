@@ -87,10 +87,9 @@ div#page3 h1 {
 div#specs {
     width: 100vw;
     height: 30%;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: -15px;
-    margin-top: 50px;
-    opacity: 0.5;
+    margin-top: 25px;
     padding-left: 15%;
 }
 
