@@ -10,15 +10,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-div#sporehook {
-    background-image: url('../img/background.png');
-    background-size: cover;
-}
 div#page1{
 	background-image: url('../img/background_page1.png');
 	background-size: cover;
 	height: 100vh
 }
+
 div#page2{
 	background-image: url('../img/background_page2.png');
 	background-size: cover;
