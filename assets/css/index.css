@@ -41,9 +41,9 @@ div#page1 img {
 }
 
 img#iphone {
-    width: 15vw;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+    width: 17vw;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
 img#sporelogo {
@@ -52,7 +52,7 @@ img#sporelogo {
 }
 
 img#sporecaption {
-    height: 10vh;
+    height: 8vh;
     padding: 1vh;
 }
 
