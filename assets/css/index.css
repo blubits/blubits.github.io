@@ -83,23 +83,24 @@ div#page2 h1 {
 
 div#specs {
     width: 100vw;
-    height: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15vw;
+    padding-right: 15vw;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: -15px;
-    margin-top: 25px;
-    padding-left: 15%;
 }
 
 div.icons {
     display: inline-block;
-    width: 10%;
-    height: inherit;
+    width: 8vw;
+    margin: 0;
+    padding: 0;
 }
 
 div.icons img {
-    height: 175%;
-    margin: 10px auto;
     display: block;
+    height: 10vh;
+    margin: 2.5vh auto;
 }
 
 div.icons p {
