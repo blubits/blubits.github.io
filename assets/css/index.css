@@ -15,15 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
- * Navigation bar
- */
-
-.navbar {
-    margin-bottom: 0;
-}
-
-/**
- * Page 1
+ * Header
  */
 
 div#header {
@@ -52,7 +44,7 @@ img#sporecaption {
 }
 
 /**
- * Page 2
+ * Page 1
  */
 
 div#page1 {
@@ -69,7 +61,7 @@ div#page1 h1 {
 }
 
 /**
- * Page 3
+ * Page 2
  */
 
 div#page2 {
@@ -108,4 +100,22 @@ div.icons p {
     font-weight: 700;
     text-align: center;
     color: #ffffff;
+}
+
+/**
+ * Footer
+ */
+
+div#footer {
+    background-color: black;
+    color: white;
+    height: 10vh;
+}
+
+div#footer small {
+    display: block;
+}
+
+div#footer small:first-child {
+    margin-top: 2vh;
 }
