@@ -5,9 +5,6 @@
 p.description {
     font-family: 'Lato', sans-serif;
     color: white;
-    width: 60vw;
-    display: block;
-    margin: 1vh auto;
     line-height: 165%;
     text-align: justify;
 }
@@ -37,23 +34,21 @@ div#page1 {
 
 div#page1 img {
     display: block;
-    margin: 0 auto;
 }
 
 img#iphone {
-    width: 17vw;
-    padding-bottom: 3vh;
-    padding-top: 3vh;
+    height: 60vh;
+    margin: 5vh auto;
 }
 
 img#sporelogo {
-    height: 13vh;
-    padding: 1vh;
+    height: 12.5vh;
+    margin: 2.5vh auto;
 }
 
 img#sporecaption {
-    height: 8vh;
-    padding: 1vh;
+    height: 7.5vh;
+    margin: 0 auto;
 }
 
 /**
@@ -63,7 +58,10 @@ img#sporecaption {
 div#page2 {
 	background-image: url('../img/background_page2.png');
 	background-size: cover;
-	height: 40vh;
+}
+
+div#page2 .container {
+    margin: 25px auto;
 }
 
 div#page2 h1 {
@@ -77,7 +75,6 @@ div#page2 h1 {
 div#page3 {
 	background-image: url('../img/background_page3.png');
 	background-size: cover;
-	height: 60vh;
 }
 
 div#page3 h1 {
