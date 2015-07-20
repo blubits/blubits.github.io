@@ -26,13 +26,13 @@ h1, h2, h3, h4, h5, h6 {
  * Page 1
  */
 
-div#page1 {
-	background-image: url('../img/background_page1.png');
+div#header {
+	background-image: url('../img/background_header.png');
 	background-size: cover;
 	height: 100vh;
 }
 
-div#page1 img {
+div#header img {
     display: block;
 }
 
@@ -55,16 +55,16 @@ img#sporecaption {
  * Page 2
  */
 
-div#page2 {
-	background-image: url('../img/background_page2.png');
+div#page1 {
+	background-image: url('../img/background_page1.png');
 	background-size: cover;
 }
 
-div#page2 .container {
+div#page1 .container {
     margin: 25px auto;
 }
 
-div#page2 h1 {
+div#page1 h1 {
     color: #FFECA1;
 }
 
@@ -72,12 +72,12 @@ div#page2 h1 {
  * Page 3
  */
 
-div#page3 {
-	background-image: url('../img/background_page3.png');
+div#page2 {
+	background-image: url('../img/background_page2.png');
 	background-size: cover;
 }
 
-div#page3 h1 {
+div#page2 h1 {
     color: #D6FFB0;
 }
 
