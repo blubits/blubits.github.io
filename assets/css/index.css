@@ -1,25 +1,29 @@
 /**
- * Global assets
+ * Pagewide styles
  */
 
 body {
     margin: 0;
 }
 
-p.description {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    line-height: 165%;
-    text-align: justify;
-}
-
 section {
     height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'LibelSuit-Regular', sans-serif;
+h1 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
     text-transform: uppercase;
+}
+
+p.description {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 150%;
+    text-align: justify;
 }
 
 /**
