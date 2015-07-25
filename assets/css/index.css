@@ -2,11 +2,19 @@
  * Global assets
  */
 
+body {
+    margin: 0;
+}
+
 p.description {
     font-family: 'Lato', sans-serif;
     color: white;
     line-height: 165%;
     text-align: justify;
+}
+
+section {
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,13 +26,12 @@ h1, h2, h3, h4, h5, h6 {
  * Header
  */
 
-div#header {
+section#header {
 	background-image: url('../img/background_header.png');
 	background-size: cover;
-	height: 100vh;
 }
 
-div#header img {
+section#header img {
     display: block;
 }
 
@@ -47,16 +54,16 @@ img#sporecaption {
  * Page 1
  */
 
-div#page1 {
+section#page1 {
 	background-image: url('../img/background_page1.png');
 	background-size: cover;
 }
 
-div#page1 .container {
+section#page1 .container {
     margin: 25px auto;
 }
 
-div#page1 h1 {
+section#page1 h1 {
     color: #FFECA1;
 }
 
@@ -64,12 +71,12 @@ div#page1 h1 {
  * Page 2
  */
 
-div#page2 {
+section#page2 {
 	background-image: url('../img/background_page2.png');
 	background-size: cover;
 }
 
-div#page2 h1 {
+section#page2 h1 {
     color: #D6FFB0;
 }
 
@@ -106,16 +113,16 @@ div.icons p {
  * Footer
  */
 
-div#footer {
+section#footer {
     background-color: black;
     color: white;
     height: 10vh;
 }
 
-div#footer small {
+section#footer small {
     display: block;
 }
 
-div#footer small:first-child {
+section#footer small:first-child {
     margin-top: 2vh;
 }
