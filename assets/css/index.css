@@ -13,10 +13,6 @@
  * Navbar
  */
 
-ul > li {
-    display: inline-block;
-}
-
 nav#rightnav ul {
     float: right;
 }
