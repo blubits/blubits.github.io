@@ -1,14 +1,6 @@
 /**
- * Pagewide styles
+ * Global assets
  */
-
-body {
-    margin: 0;
-}
-
-section {
-    height: 100vh;
-}
 
 h2 {
     font-family: 'Helvetica Neue', sans-serif;
@@ -50,7 +42,6 @@ hr.soften {
 /**
  * Header
  */
-
 div#sub{
     padding-top: 100px;
     padding-bottom: 150px;
@@ -59,31 +50,22 @@ div#sub{
 div#state-container{
     margin: auto;
 }
-
-/**
- * Pages
- */
-
-div#page1 {
+div#page1{
     height:920px;
     padding-top:115px;
     background-image:url('../img/bg1.png');
     background-size: cover;
     z-index: 1;
 }
-
-#text1 {
+#text1{
     padding-bottom:120px;
 }
-
-#stat1 {
+#stat1{
     height:9em;
 }
-
-#stat1-container {
+#stat1-container{
     text-align: center;
 }
-
 div#page2{
     padding-top: 30px;
     height:800px;
@@ -188,6 +170,9 @@ div#specs {
 
 div.icons {
     display: inline-block;
+    width: 8vw;
+    margin: 0;
+    padding: 0;
 }
 
 div.icons img {
@@ -213,5 +198,4 @@ div#footer {
 }
 p#footer{
     color:#FFF
->>>>>>> origin/spore-2
 }
