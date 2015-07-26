@@ -1,42 +1,53 @@
 /**
  * Global assets
  */
-
 h2 {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 100;
     color: #333;
-    font-size:50px;
+    font-size: 50px;
 }
 
-p{
+p {
     font-family:  'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: #333;
 }
 
-p#statement{
+p#statement {
     font-weight: 300;
     font-size: 18px;
 }
-p#title{
-    font-weight:200;
-    font-size:15px;
-    margin:0 0 0;
+
+p#title {
+    font-weight: 200;
+    font-size: 15px;
+    margin: 0 0 0;
 }
-p#name{
-    font-size:15px;
-    margin:0 0 0;
+
+p#name {
+    font-size: 15px;
+    margin: 0 0 0;
+}
+
+div#sub {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+div#state-container {
+    margin: auto;
 }
 
 hr.soften {
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
-  border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+    border: 0;
 }
 
 /**
@@ -71,96 +82,105 @@ img#sporecaption {
  * Pages
  */
 
-div#sub{
-    padding-top: 100px;
-    padding-bottom: 150px;
-    margin: 0 auto;
-}
-div#state-container{
-    margin: auto;
-}
-div#page1{
-    height:920px;
-    padding-top:115px;
-    background-image:url('../img/spore/bg1.png');
+div#page1 {
+    height: 920px;
+    padding-top: 115px;
+    background-image: url('../img/spore/bg1.png');
     background-size: cover;
     z-index: 1;
 }
-#text1{
-    padding-bottom:120px;
+
+#text1 {
+    padding-bottom: 120px;
 }
-#stat1{
-    height:9em;
+
+#stat1 {
+    height: 9em;
 }
-#stat1-container{
+
+#stat1-container {
     text-align: center;
 }
-div#page2{
+
+div#page2 {
     padding-top: 30px;
-    height:800px;
+    height: 800px;
     z-index: 0;
-    overflow:hidden;
-    background-image:url('../img/spore/bg2.png');
-    background-size:cover;
+    overflow: hidden;
+    background-image: url('../img/spore/bg2.png');
+    background-size: cover;
 }
-#page2 #header-container{
+
+#page2 #header-container {
     padding-bottom: 50px;
 }
-#img1{
-    width:9em;
+
+#img1 {
+    width: 9em;
     margin-top: -200px;
 }
-#img2-container{
+
+#img2-container {
     text-align: center;
 }
-#img2{
+
+#img2 {
     margin-top: -560px;
-    width:18em;
+    width: 18em;
 }
-#img1-container{
-    float:right;
+
+#img1-container {
+    float: right;
 }
-div#page3{
-    height:1024px;
-    background-image:url('../img/spore/bg3.png');
-    background-size:cover;
+
+div#page3 {
+    height: 1024px;
+    background-image: url('../img/spore/bg3.png');
+    background-size: cover;
     padding-top: 40px;
     overflow: hidden;
 }
 
-#page3 #header-container{
+#page3 #header-container {
     padding-bottom: 20px;
 }
-#img3{
-    width:30em;
+
+#img3 {
+    width: 30em;
 }
-#img3-container{
+
+#img3-container {
     text-align: center;
     margin-top: 220px;
-    margin-left:25px;
+    margin-left: 25px;
 }
-#img4{
-    width:20em;
+
+#img4 {
+    width: 20em;
 }
-#img4-container{
+
+#img4-container {
     margin-top: 100px;
     text-align: center;
 }
-div#page4{
-    height:724px;
-    background-image:url('../img/spore/bg4_2.png');
+
+div#page4 {
+    height: 724px;
+    background-image: url('../img/spore/bg4_2.png');
     padding-top: 50px;
-    overflow:hidden;
+    overflow: hidden;
 }
-#img5{
+
+#img5 {
     width: 15em;
 }
-#img5-container{
+#img5-container {
     margin-top: 150px;
     text-align: center;
 }
-div#page5{
-    padding-top:50px;
+
+div#page5 {
+    padding-top: 50px;
 }
 
 div#page5 img {
@@ -176,9 +196,10 @@ div#page5 img {
  */
 
 div#footer {
-    background-color:#333;
-    height:82px;
+    background-color: #333;
+    height: 82px;
 }
-p#footer{
-    color:#FFF
+
+p#footer {
+    color: #FFF;
 }
