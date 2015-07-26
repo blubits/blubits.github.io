@@ -42,6 +42,35 @@ hr.soften {
 /**
  * Header
  */
+div#header {
+    background-image: url('../img/spore/background_header.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+div#header img {
+    display: block;
+}
+
+img#iphone {
+    height: 60vh;
+    margin: 5vh auto;
+}
+
+img#sporelogo {
+    height: 12.5vh;
+    margin: 2.5vh auto;
+}
+
+img#sporecaption {
+    height: 7.5vh;
+    margin: 0 auto;
+}
+
+/**
+ * Pages
+ */
+
 div#sub{
     padding-top: 100px;
     padding-bottom: 150px;
@@ -53,7 +82,7 @@ div#state-container{
 div#page1{
     height:920px;
     padding-top:115px;
-    background-image:url('../img/bg1.png');
+    background-image:url('../img/spore/bg1.png');
     background-size: cover;
     z-index: 1;
 }
@@ -71,7 +100,7 @@ div#page2{
     height:800px;
     z-index: 0;
     overflow:hidden;
-    background-image:url('../img/bg2.png');
+    background-image:url('../img/spore/bg2.png');
     background-size:cover;
 }
 #page2 #header-container{
@@ -93,7 +122,7 @@ div#page2{
 }
 div#page3{
     height:1024px;
-    background-image:url('../img/bg3.png');
+    background-image:url('../img/spore/bg3.png');
     background-size:cover;
     padding-top: 40px;
     overflow: hidden;
@@ -119,7 +148,7 @@ div#page3{
 }
 div#page4{
     height:724px;
-    background-image:url('../img/bg4_2.png');
+    background-image:url('../img/spore/bg4_2.png');
     padding-top: 50px;
     overflow:hidden;
 }
@@ -133,59 +162,13 @@ div#page4{
 div#page5{
     padding-top:50px;
 }
-div#header {
-    background-image: url('../img/background_header.png');
-    background-size: cover;
-    height: 100vh;
-}
 
-div#header img {
+div#page5 img {
     display: block;
-}
-
-img#iphone {
-    height: 60vh;
-    margin: 5vh auto;
-}
-
-img#sporelogo {
-    height: 12.5vh;
-    margin: 2.5vh auto;
-}
-
-img#sporecaption {
-    height: 7.5vh;
+    height: 250px;
+    border-radius: 100%;
+    border: 1px solid black;
     margin: 0 auto;
-}
-
-
-div#specs {
-    width: 100vw;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-div.icons {
-    display: inline-block;
-    width: 8vw;
-    margin: 0;
-    padding: 0;
-}
-
-div.icons img {
-    display: block;
-    height: 10vh;
-    margin: 2.5vh auto;
-}
-
-div.icons p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
 }
 
 /**
