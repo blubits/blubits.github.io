@@ -197,9 +197,9 @@ div#page5 img {
 
 div#footer {
     background-color: #333;
-    height: 82px;
+    color: #FFF;
 }
 
-p#footer {
-    color: #FFF;
+div#footer a {
+    color: #CCC;
 }
