@@ -4,5 +4,4 @@ Welcome to my GitHub page! Mostly empty right now, but as time progresses I'll p
 
 ## Current projects
 
-### Spore
-Start-up proposal for YouthHack
+* **Spore** - YouthHack project proposal
