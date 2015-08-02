@@ -1,0 +1,27 @@
+/**
+ * Page-wide styles
+ */
+
+body {
+    font-family: "Roboto", sans-serif !important;
+    color: white !important;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+#cover {
+    height: 100vh;
+    width: 100vw;
+    padding: 1% 7%;
+    background-color: #f44336;
+}
+
+.container {
+    margin-top: 12%;
+}
+
+i {
+    font-size: 12em !important;
+}
