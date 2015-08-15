@@ -18,10 +18,13 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="{{site.baseurl}}/">Welcome to {{ site.name }}</a></h1>
-        <h4>{{ site.description }}</h4>
-    </header>
+
+    <div class="container-fluid">
+        <header>
+            <h1 class="text-center">{{ site.name }}</h1>
+            <h4 class="text-center">{{ site.description }}</h4>
+        </header>
+    </div>
 
     <div class="container">
         {{ content }}
