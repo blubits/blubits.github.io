@@ -4,14 +4,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/frameworks/mdl/material.min.css">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/blog/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/blog/css/default.css">
 
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700'>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Meta -->
     <meta name="description" content="{{site.description}}"/>
     <meta name="author" content="{{site.author}}"/>
-    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="{{site.baseurl}}/feed.xml" />
+
+    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="{{site.baseurl}}/feed.xml">
 
     <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
 
@@ -19,14 +21,32 @@
 
 <body>
 
-    <header class="valign-wrapper">
-        <h1>{{ site.name }}</h1>
-        <h4>{{ site.description }}</h4>
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Blog</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
     </header>
-
-    <div class="container">
-        {{ content }}
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
     </div>
+
+    {{ content }}
 
     <!-- JavaScript/jQuery -->
     <script type="text/javascript" src="{{site.baseurl}}assets/jquery/jquery-2.1.4.min.js"></script>

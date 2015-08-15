@@ -3,15 +3,17 @@
 <head>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/assets/materialize/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <link rel="stylesheet" type="text/css" href="/assets/blog/default.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/frameworks/mdl/material.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/blog/css/default.css">
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Meta -->
     <meta name="description" content="My web log of random stuff."/>
     <meta name="author" content="Maded Batara III"/>
-    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed.xml" />
+
+    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed.xml">
 
     <title> Hello World! |  Blue bites</title>
 
@@ -19,13 +21,32 @@
 
 <body>
 
-    <header class="valign-wrapper">
-        <h1>Blue bites</h1>
-        <h4>My web log of random stuff.</h4>
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Blog</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
     </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+    </div>
 
-    <div class="container">
-        <article>
+    <article>
         <header>
             <h2>Hello World!</h2>
             <span><i class="icon-clock"></i><time datetime="2015-08-15">Aug 15, 2015</time></span><br/>
@@ -47,11 +68,10 @@
 </article>
 
 
-    </div>
 
     <!-- JavaScript/jQuery -->
     <script type="text/javascript" src="assets/jquery/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/mdl/material.min.js"></script>
 
 </body>
 </html>
