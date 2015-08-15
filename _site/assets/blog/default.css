@@ -2,30 +2,21 @@
  * Page-wide styles
  */
 
-body {
-    font-family: "Roboto", sans-serif !important;
+a {
+    color: black;
 }
 
-h1 {
-    font-weight: 200;
-    font-size: 5em;
-}
-
-h4 {
-    font-weight: 500;
-    font-size: 1.25em;
+i {
+    font-size: 15px;
 }
 
 /**
  * Header
  */
 
-.container-fluid {
+header {
     padding: 0;
     margin-top: -20px;
-}
-
-header {
     background-color: #9c27b0;
     color: white;
     height: 40vh;

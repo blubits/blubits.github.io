@@ -3,9 +3,9 @@
 <head>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/materialize/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/blog/default.css" />
 
     <!-- Meta -->
@@ -19,16 +19,18 @@
 
 <body>
 
-    <div class="container-fluid">
-        <header>
-            <h1 class="text-center">{{ site.name }}</h1>
-            <h4 class="text-center">{{ site.description }}</h4>
-        </header>
-    </div>
+    <header class="valign-wrapper">
+        <h1>{{ site.name }}</h1>
+        <h4>{{ site.description }}</h4>
+    </header>
 
     <div class="container">
         {{ content }}
     </div>
+
+    <!-- JavaScript/jQuery -->
+    <script type="text/javascript" src="{{site.baseurl}}assets/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}assets/materialize/js/materialize.min.js"></script>
 
 </body>
 </html>
