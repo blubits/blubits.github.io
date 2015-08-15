@@ -2,6 +2,11 @@
  * Page-wide styles
  */
 
+body {
+    background-color: #9c27b0;
+    color: white !important;
+}
+
 a {
     color: black;
 }
@@ -17,7 +22,6 @@ i {
 header {
     padding: 0;
     margin-top: -20px;
-    background-color: #9c27b0;
     color: white;
     height: 40vh;
 }

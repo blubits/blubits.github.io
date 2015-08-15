@@ -54,7 +54,7 @@ hr.soften {
  * Header
  */
 div#header {
-    background-image: url('../img/spore/background_header.png');
+    background-image: url('../img/background_header.png');
     background-size: cover;
     height: 100vh;
 }
@@ -85,7 +85,7 @@ img#sporecaption {
 div#page1 {
     height: 920px;
     padding-top: 115px;
-    background-image: url('../img/spore/bg1.png');
+    background-image: url('../img/bg1.png');
     background-size: cover;
     z-index: 1;
 }
@@ -107,7 +107,7 @@ div#page2 {
     height: 800px;
     z-index: 0;
     overflow: hidden;
-    background-image: url('../img/spore/bg2.png');
+    background-image: url('../img/bg2.png');
     background-size: cover;
 }
 
@@ -135,7 +135,7 @@ div#page2 {
 
 div#page3 {
     height: 1024px;
-    background-image: url('../img/spore/bg3.png');
+    background-image: url('../img/bg3.png');
     background-size: cover;
     padding-top: 40px;
     overflow: hidden;
@@ -166,7 +166,7 @@ div#page3 {
 
 div#page4 {
     height: 724px;
-    background-image: url('../img/spore/bg4_2.png');
+    background-image: url('../img/bg4_2.png');
     padding-top: 50px;
     overflow: hidden;
 }
