@@ -1,0 +1,31 @@
+/**
+ * Page-wide styles
+ */
+
+body::before {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
+}
+
+/**
+ * Cards
+ */
+
+div.mdl-card {
+    width: 75vw;
+    margin: 25px auto;
+}
