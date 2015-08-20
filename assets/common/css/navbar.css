@@ -1,0 +1,13 @@
+/**
+ * Navbar styles
+ */
+
+ul[for="social-links"] a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+}
+
+ul[for="social-links"] i {
+    margin-right: 8px;
+}
