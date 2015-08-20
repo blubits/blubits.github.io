@@ -108,11 +108,15 @@ ul[for="social-links"] i {
 .drawer-navigation .drawer-level2 {
     padding-left: 88px !important;
 }
+/** Adapt to smaller (tablet/phone) screens */
+@media screen and (max-width: 1024px) {
+    .drawer-navigation .drawer-level2 {
+        padding-left: 64px !important;
+    }
+}
 
-.drawer-separator {
-    height: 1px;
-    background-color: #dcdcdc;
-    margin: 8px 0;
+.drawer-navigation span.active {
+    background: #E0E0E0 !important;
 }
 
 

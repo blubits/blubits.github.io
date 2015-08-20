@@ -2,42 +2,48 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-<div class="mdl-card mdl-shadow--2dp">
-    <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
-    </div>
-    <div class="mdl-card__supporting-text">
-        <i class="tiny material-icons">today</i>&nbsp;{{ site.time | date_to_long_string }}
-    <div>
-    <div class="mdl-card__supporting-text">
-        {{ post.excerpt }}
-    </div>
-</div>
-{% endfor %}
+            {% for post in paginator.posts %}
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <div class="mdl-cell mdl-cell--8-col">
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <i class="material-icons">today</i>&nbsp;{{ site.time | date_to_long_string }}
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            {{ post.excerpt }}
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
+            </div>
+            {% endfor %}
 
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-        <span>&laquo; Prev</span>
-    {% endif %}
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+                {% else %}
+                    <span>&laquo; Prev</span>
+                {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-            <em>{{ page }}</em>
-        {% elsif page == 1 %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-        {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-    {% endfor %}
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                        <em>{{ page }}</em>
+                    {% elsif page == 1 %}
+                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                {% endfor %}
 
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-        <span>Next &raquo;</span>
-    {% endif %}
-</div>
-{% endif %}
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+                {% else %}
+                    <span>Next &raquo;</span>
+                {% endif %}
+            </div>
+            {% endif %}

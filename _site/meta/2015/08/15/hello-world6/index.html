@@ -4,9 +4,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/frameworks/mdl/material.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/blog/css/default.css">
+    <link rel="stylesheet" type="text/css" href="/assets/home/css/index.css">
 
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700'>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Meta -->
@@ -15,38 +15,73 @@
 
     <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed.xml">
 
-    <title> Hello World! |  Blue bites</title>
+    <title> Hello World! |  Random blue bits</title>
 
 </head>
 
 <body>
 
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">Blog</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation -->
-            <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            </nav>
-        </div>
-    </header>
-    <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
-        <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-    </div>
+    <div class="mdl-layout mdl-js-layout">
 
-    <article>
+        <header class="mdl-layout__header mdl-layout__header--transparent  mdl-layout__header--scroll">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row">
+
+                <span class="mdl-layout-title"></span>
+
+                <div class="mdl-layout-spacer"></div>
+
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="social-links">
+                    <i class="material-icons">contacts</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="social-links">
+                    <li class="mdl-menu__item"><a href="https://facebook.com/mnbatara">
+                        <i class="fa fa-facebook-official fa-lg fa-fw"></i> Facebook
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://twitter.com/mnbatara3">
+                        <i class="fa fa-twitter fa-lg fa-fw"></i> Twitter
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://instagram.com/mnbatara3">
+                        <i class="fa fa-instagram fa-lg fa-fw"></i> Instagram
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://blubits.tumblr.com">
+                        <i class="fa fa-tumblr fa-lg fa-fw"></i> Tumblr
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://github.com/blubits">
+                        <i class="fa fa-github fa-lg fa-fw"></i> Github
+                    </a></li>
+                </ul>
+
+            </div>
+        </header>
+
+        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+
+            <header class="drawer-header">
+                <img id="display-pic" src="https://i.imgur.com/SxioFt4.jpg">
+                <span class="mdl-layout-title">Maded Batara III</span>
+                <span class="mdl-layout-title" id="drawer-mail">
+                    <a href="mailto:mnbatara3@gmail.com">mnbatara3@gmail.com</a>
+                </span>
+            </header>
+
+            <nav class="drawer-navigation mdl-navigation mdl-color--white">
+                <a class="mdl-navigation__link mdl-color-text--blue-grey-900" href="">
+                    <i class="material-icons">home</i> Home
+                </a>
+                <span class="mdl-navigation__link mdl-color-text--blue-grey-900" href="">
+                    <i class="material-icons">web</i> Projects
+                </span>
+                <a class="mdl-navigation__link mdl-color-text--blue-grey-600 drawer-level2" href="spore/">Spore</a>
+                <span class="mdl-navigation__link mdl-color-text--blue-grey-900 active">
+                    <i class="material-icons">chat</i> Blog
+                </span>
+            </nav>
+
+        </div>
+
+        <main class="mdl-layout__content">
+            <article>
         <header>
             <h2>Hello World!</h2>
             <span><i class="icon-clock"></i><time datetime="2015-08-15">Aug 15, 2015</time></span><br/>
@@ -68,10 +103,13 @@
 </article>
 
 
+        </main>
+
+    </div>
 
     <!-- JavaScript/jQuery -->
-    <script type="text/javascript" src="assets/jquery/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="assets/mdl/material.min.js"></script>
+    <script type="text/javascript" src="/assets/frameworks/jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/assets/frameworks/mdl/material.min.js"></script>
 
 </body>
 </html>
