@@ -2,50 +2,16 @@
  * Page-wide styles
  */
 
-body {
-    font-family: "Roboto", sans-serif !important;
-    color: white !important;
-}
-
-h1 {
-    font-weight: 200;
-}
-
-#cover {
-    height: 100vh;
-    width: 100vw;
-    padding: 1% 7%;
-    background-color: #3f51b5;
-}
-
-/**
- * Navbar
- */
-
-nav li a {
-    color: white;
-    text-shadow: none !important;
-}
-
-nav li a:hover, nav li a:focus {
-    background-color: transparent !important;
-    color: white;
-    text-shadow: none !important;
-    border-bottom: 1px solid white;
-}
-
-ul.dropdown-menu {
-    border-radius: 0px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
-/**
- * Main
- */
-
-img#avatar {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    border-radius: 100%;
-}
+/* body::before {
+    background-image: url('../../blog/img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+} */
