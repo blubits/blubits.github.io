@@ -17,35 +17,55 @@
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-        <header class="mdl-layout__header">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
 
             <div class="mdl-layout-icon"></div>
 
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Title</span>
                 <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                </nav>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="social-links">
+                    <i class="material-icons">contacts</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="social-links">
+                    <li class="mdl-menu__item"><a href="https://facebook.com/mnbatara">
+                        <i class="fa fa-facebook-official fa-lg fa-fw"></i> Facebook
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://twitter.com/mnbatara3">
+                        <i class="fa fa-twitter fa-lg fa-fw"></i> Twitter
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://instagram.com/mnbatara3">
+                        <i class="fa fa-instagram fa-lg fa-fw"></i> Instagram
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://blubits.tumblr.com">
+                        <i class="fa fa-tumblr fa-lg fa-fw"></i> Tumblr
+                    </a></li>
+                    <li class="mdl-menu__item"><a href="https://github.com/blubits">
+                        <i class="fa fa-github fa-lg fa-fw"></i> Github
+                    </a></li>
+                </ul>
             </div>
 
         </header>
 
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
+        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="drawer-header">
+                <img id="display-pic" src="http://i.imgur.com/SxioFt4.jpg">
+                <span class="mdl-layout-title">Maded Batara III</span>
+                <span class="mdl-layout-title" id="drawer-mail">
+                    <a href="mailto:mnbatara3@gmail.com">mnbatara3@gmail.com</a>
+                </span>
+            </header>
+            <nav class="drawer-navigation mdl-navigation mdl-color--white">
+                <span class="mdl-navigation__link mdl-color-text--blue-grey-900" href="">
+                    <i class="material-icons">web</i> Projects
+                </span>
+                <a class="mdl-navigation__link mdl-color-text--blue-grey-600 drawer-level2" href="spore/">Spore</a>
+                <div class="drawer-separator"></div>
+                <a class="mdl-navigation__link mdl-color-text--blue-grey-900" href="blog/">
+                    <i class="material-icons">chat</i> Blog
+                </a>
             </nav>
         </div>
-
-        <main class="mdl-layout__content">
-        </main>
 
     </div>
 
