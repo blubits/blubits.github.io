@@ -41,8 +41,7 @@ div.maincontent h1 {
     div.maincontent {
         width: 60vw;
     }
-
     div.maincontent h1 {
-        font-size: 5vmax;
+        font-size: 6vmax;
     }
 }
