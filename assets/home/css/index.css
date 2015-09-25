@@ -7,7 +7,7 @@ body {
 }
 
 body::before {
-    background-image: url('../../blog/img/background.jpg');
+    background-image: url('../img/background.png');
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -18,4 +18,19 @@ body::before {
     bottom: 0;
     top: 0;
     position: fixed;
+}
+
+/**
+ * Content
+ */
+
+div.maincontent {
+    width: 40vw;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
 }
