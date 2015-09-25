@@ -26,10 +26,8 @@ body::before {
 
 div.maincontent {
     width: 40vw;
-    margin: auto;
-    position: relative;
-    top: 30%;
-    transform: translateY(-50%);
+    margin: 0 auto;
+    margin-top: 7%;
     color: white;
     text-align: center;
     vertical-align: middle;
