@@ -2,8 +2,9 @@
  * Page-wide styles
  */
 
-p, div, span {
+p, div, span, header {
     font-family: 'Computer Modern Serif', serif;
+    font-size: 18px;
 }
 
 h1, h2 {
@@ -11,9 +12,62 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3.5em;
+    margin: 15px auto 0px;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 2.5em;
+    margin: 0 auto;
+}
+
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+/**
+ * Header styles
+ */
+
+p.description {
+    font-size: 24px;
+    margin: 0;
+}
+
+/**
+ * Content styles
+ */
+
+div.post_title {
+    padding: 2px 0;
+    margin-bottom: 10px;
+}
+
+span.date {
+    font-size: 14px;
+    font-variant: small-caps;
+    color: #444444;
+}
+
+/**
+ * Pagination styles
+ */
+
+div.pagination {
+    font-variant: small-caps;
+    width: 50%;
+    margin: 20px auto;
+    color: #222222;
+}
+span.curr_page {
+    font-weight: bold;
 }
