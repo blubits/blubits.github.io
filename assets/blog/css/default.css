@@ -2,14 +2,18 @@
  * Page-wide styles
  */
 
-body {
-    font-family: 'Roboto', sans-serif;
+p, div, span {
+    font-family: 'Computer Modern Serif', serif;
 }
 
-/**
- * Cards
- */
+h1, h2 {
+    font-family: 'News Cycle', sans-serif;
+}
 
-div.mdl-card {
-    width: 100%;
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
 }

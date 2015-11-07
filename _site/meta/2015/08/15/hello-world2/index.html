@@ -3,20 +3,29 @@
 <head>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/assets/frameworks/mdl/material.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/frameworks/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/common/css/drawer.css">
-    <link rel="stylesheet" type="text/css" href="/assets/common/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="/assets/blog/css/default.css">
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="/assets/common/fonts/cmserif/cmun-serif.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" >
 
     <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
     <meta name="description" content="My web log of random stuff."/>
     <meta name="author" content="Maded Batara III"/>
 
-    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed.xml">
+    <!-- Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68097958-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
     <title> Hello World! |  Random blue bits</title>
 
@@ -24,70 +33,13 @@
 
 <body>
 
-    <div class="mdl-layout mdl-js-layout">
+    <h1>Random blue bits</h1>
 
-        <header class="mdl-layout__header mdl-layout__header--scroll">
-            <div class="mdl-layout-icon"></div>
-            <div class="mdl-layout__header-row">
-
-                <span class="mdl-layout-title">Random blue bits</span>
-
-                <div class="mdl-layout-spacer"></div>
-
-                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="social-links">
-                    <i class="material-icons">contacts</i>
-                </button>
-                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="social-links">
-                    <li class="mdl-menu__item"><a href="https://facebook.com/mnbatara">
-                        <i class="fa fa-facebook-official fa-lg fa-fw"></i> Facebook
-                    </a></li>
-                    <li class="mdl-menu__item"><a href="https://twitter.com/mnbatara3">
-                        <i class="fa fa-twitter fa-lg fa-fw"></i> Twitter
-                    </a></li>
-                    <li class="mdl-menu__item"><a href="https://instagram.com/mnbatara3">
-                        <i class="fa fa-instagram fa-lg fa-fw"></i> Instagram
-                    </a></li>
-                    <li class="mdl-menu__item"><a href="https://blubits.tumblr.com">
-                        <i class="fa fa-tumblr fa-lg fa-fw"></i> Tumblr
-                    </a></li>
-                    <li class="mdl-menu__item"><a href="https://github.com/blubits">
-                        <i class="fa fa-github fa-lg fa-fw"></i> Github
-                    </a></li>
-                </ul>
-
-            </div>
-        </header>
-
-        <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-
-            <header class="drawer-header">
-                <img id="display-pic" src="https://i.imgur.com/SxioFt4.jpg">
-                <span class="mdl-layout-title">Maded Batara III</span>
-                <span class="mdl-layout-title" id="drawer-mail">
-                    <a href="mailto:mnbatara3@gmail.com">mnbatara3@gmail.com</a>
-                </span>
-            </header>
-
-            <nav class="drawer-navigation mdl-navigation mdl-color--white">
-                <a class="mdl-navigation__link mdl-color-text--blue-grey-900" href="/">
-                    <i class="material-icons">home</i> Home
-                </a>
-                <span class="mdl-navigation__link mdl-color-text--blue-grey-900" href="">
-                    <i class="material-icons">web</i> Projects
-                </span>
-                <a class="mdl-navigation__link mdl-color-text--blue-grey-600 drawer-level2" href="spore/">Spore</a>
-                <span class="mdl-navigation__link mdl-color-text--blue-grey-900 active">
-                    <i class="material-icons">chat</i> Blog
-                </span>
-            </nav>
-
-        </div>
-
-        <main class="mdl-layout__content">
-            <article>
+    <div class="content">
+        <article>
         <header>
             <h2>Hello World!</h2>
-            <span><i class="icon-clock"></i><time datetime="2015-08-15">Aug 15, 2015</time></span><br/>
+            <span>Aug 15, 2015</span><br/>
             <span class="category"><i class="icon-tag"></i> meta</span><br/>
             <span class="author"><i class="icon-user"></i> Maded Batara III</span>
         </header>
@@ -106,13 +58,10 @@
 </article>
 
 
-        </main>
-
-    </div>
+    </main>
 
     <!-- JavaScript/jQuery -->
     <script type="text/javascript" src="/assets/frameworks/jquery/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="/assets/frameworks/mdl/material.min.js"></script>
 
 </body>
 </html>
