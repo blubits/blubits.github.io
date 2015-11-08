@@ -38,8 +38,8 @@ h2 a:hover {
  * Header styles
  */
 
-header {
-    margin-bottom: 20px;
+header.site {
+    padding-bottom: 20px;
     border-bottom: 1px solid #444444;
 }
 
@@ -57,7 +57,7 @@ div.post_title {
     margin-bottom: 10px;
 }
 
-span.date {
+span.date, span.category {
     font-size: 14px;
     font-variant: small-caps;
     color: #444444;
@@ -67,7 +67,7 @@ span.date {
  * Pagination styles
  */
 
-div.pagination {
+footer {
     font-variant: small-caps;
     font-size: 14;
     text-align: center;

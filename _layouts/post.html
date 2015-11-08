@@ -3,16 +3,17 @@ layout: default
 ---
 
 <article>
-        <header>
+        <div class="post_header">
             <h2>{{ page.title }}</h2>
-            <span>{{page.date|date:"%b %d, %Y"}}</span><br/>
-            <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
-            <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
-        </header>
+            <span class="date">{{page.date | date:"%d %b %Y"}}</span><br/>
+        </div>
 
-        <div class="entry">{{ content }}</div>
+        <div class="text">
+            {{ content }}
+        </div>
 
-        <footer><!-- additional info --></footer>
-
+        <div class="post_footer">
+            <span class="category"><i class="icon-tag"></i>Tags: {{ page.categories | category_links }}</span><br/>
+        </div>
 </article>
 
