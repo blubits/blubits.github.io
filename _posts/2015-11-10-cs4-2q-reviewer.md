@@ -10,7 +10,7 @@ The reviewer can be found [here](https://www.dropbox.com/s/d8lo2b9raud2nun/Array
 
 For additional resources, consult the following:
 
-* Videos on sorting and searching by [Harvard's CS50](cs50.harvard.edu), found here:
+* Videos on sorting and searching by [Harvard's CS50](https://cs50.harvard.edu), found here:
     - [This video](https://www.youtube.com/watch?v=CX2CYIJLwfg) for linear search
     - [This video](https://www.youtube.com/watch?v=D5SrAga1pno) for binary search
     - [This video](https://www.youtube.com/watch?v=8Kp-8OGwphY) for bubble sort
