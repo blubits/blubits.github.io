@@ -3,11 +3,13 @@ layout: post
 title: CompSci 4 2Q-LT Reviewer
 category: computer_science
 
+excerpt: The reviewer can be found here. For additional resources, consult the following:
 ---
 
 The reviewer can be found [here](https://www.dropbox.com/s/d8lo2b9raud2nun/Array%20Algorithms.pdf?dl=0).
 
 For additional resources, consult the following:
+
 * Videos on sorting and searching by [Harvard's CS50](cs50.harvard.edu), found here:
     - [This video](https://www.youtube.com/watch?v=CX2CYIJLwfg) for linear search
     - [This video](https://www.youtube.com/watch?v=D5SrAga1pno) for binary search
