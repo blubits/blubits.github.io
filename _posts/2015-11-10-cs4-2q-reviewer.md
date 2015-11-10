@@ -17,6 +17,7 @@ For additional resources, consult the following:
     - [This video](https://www.youtube.com/watch?v=8Kp-8OGwphY) for bubble sort
     - [This video](https://www.youtube.com/watch?v=f8hXR_Hvybo) for selection sort
     - [This video](https://www.youtube.com/watch?v=DFG-XuyPYUQ) for insertion sort
+* [VisuAlgo](http://visualgo.net/sorting.html) is good for visualizing sorting algorithms, plus you can slow down or speed up the simulation if you want to.
 * The ArrayList API can be found [here](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html). You need to know how to:
     - add and remove (an) item(s) to the list
     - get the index of an item
