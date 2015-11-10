@@ -3,7 +3,8 @@ layout: post
 title: CompSci 4 2Q-LT Reviewer
 category: computer_science
 
-excerpt: The reviewer can be found here. For additional resources, consult the following:
+excerpt: The reviewer can be found here. For additional resources, consult the following.
+
 ---
 
 The reviewer can be found [here](https://www.dropbox.com/s/d8lo2b9raud2nun/Array%20Algorithms.pdf?dl=0).
@@ -22,4 +23,4 @@ For additional resources, consult the following:
     - change the item at a certain index
     - get the size of the list
     - remove all items in the list.
-* There are slides in the CS4 Facebook group, that should help =)
+* There are slides in the CS4 Facebook group, that should help.
