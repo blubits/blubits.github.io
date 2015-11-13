@@ -17,7 +17,7 @@ function configure() {
             // Creating a marker and putting it on the map
             var marker = new google.maps.Marker({
                 position: latLng,
-                title: data.name,
+                title: data.name + "//" + data.node_id,
                 icon: {
                     path: google.maps.SymbolPath.CIRCLE,
                     scale: 5
