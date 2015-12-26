@@ -25,7 +25,8 @@ function configure() {
             });
             markers.push(marker);
         });
-        var markerCluster = new MarkerClusterer(map, markers);
+        var marker_options = {gridSize: 50, maxZoom: 15};
+        var markerCluster = new MarkerClusterer(map, markers, marker_options);
     });
     var polylines = []
     $.getJSON("./connections.json", function(json2) {
