@@ -2,13 +2,23 @@
  * Page-wide styles
  */
 
+body {
+    background-color: #F4F4F4;
+    color: #111111;
+}
+
+a {
+    color: #003872; /** darken($accent, 10) **/
+    text-decoration: none;
+}
+
 p, div, span, header {
-    font-family: 'Computer Modern Serif', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
 h1, h2 {
-    font-family: 'News Cycle', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
