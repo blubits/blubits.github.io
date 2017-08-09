@@ -569,9 +569,9 @@ $("#hblock").change(function(){
     var eng = "h" + slots[block][1];
     var fil = "h" + slots[block][2];
     var ss = "h" + slots[block][3];
-    $("." + eng).text("English 6" + $(this).find("option:selected").text());
-    $("." + fil).text("Filipino 6" + $(this).find("option:selected").text());
-    $("." + ss).text("SocSci 6" + $(this).find("option:selected").text());
+    $("." + eng).text("English " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
+    $("." + fil).text("Filipino " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
+    $("." + ss).text("SocSci " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
     $.each(sched[eng].css, function(key2, value2){
         $("." + eng).css(key2, value2);
     });
@@ -597,7 +597,7 @@ $("#mblock").change(function(){
     if ($("#shift").val() === "0") var sched = sched_b;
     if ($("#shift").val() === "1") var sched = sched_a;
     var math = "h" + slots[block][0];
-    $("." + math).text("Math 6." + $(this).find("option:selected").text());
+    $("." + math).text("Math " + ($("#grade").val() === "11" ? "5." : "6.") + + $(this).find("option:selected").text());
     $.each(sched[math].css, function(key2, value2){
         $("." + math).css(key2, value2);
     });
