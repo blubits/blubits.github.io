@@ -295,7 +295,76 @@ var rooms = {
     "CompSci 5C": "Samsung Lab",
     "Compsci 5X": "Samsung Lab",
     "Engg C": "SHB 410",
-    "Engg Y": "SHB 410"
+    "Engg Y": "SHB 410",
+    "Tech A": "TBA",
+    "Tech B": "TBA",
+    "Tech X": "TBA",
+    "Tech Y": "TBA",
+    "Tech Z": "TBA",
+    "English 5A": "SHBEx 2A",
+    "Filipino 5A": "SHBEx 2B",
+    "SocSci 5A": "SHBEx 2B",
+    "English 5B": "SHBEx 2A",
+    "Filipino 5B": "SHBEx 2B",
+    "SocSci 5B": "SHBEx 2B",
+    "English 5C": "SHBEx 2A",
+    "Filipino 5C": "SHBEx 2B",
+    "SocSci 5C": "SHBEx 2A",
+    "English 5D": "SHBEx 2A",
+    "Filipino 5D": "SHBEx 2B",
+    "SocSci 5D": "SHBEx 2A",
+    "English 5E": "SHBEx 2A",
+    "Filipino 5E": "SHBEx 2B",
+    "SocSci 5E": "SHBEx 2B",
+    "English 5F": "SHBEx 2A",
+    "Filipino 5F": "SHBEx 2B",
+    "SocSci 5F": "SHBEx 2A",
+    "English 5G": "SHBEx 2A",
+    "Filipino 5G": "SHBEx 2A",
+    "SocSci 5G": "SHBEx 2B",
+    "English 5H": "SHBEx 2A",
+    "Filipino 5H": "SHBEx 2B",
+    "SocSci 5H": "SHBEx 2A",
+    "Math 5.1A": "SHB 409",
+    "Math 5.1B": "SHB 409",
+    "Math 5.1C": "SHB 409",
+    "Math 5.2D": "SHB 409",
+    "Math 5.1E": "SHB 409",
+    "Math 5.1F": "SHB 409",
+    "Math 5.2G": "SHB 406",
+    "Math 5.2H": "SHB 406",
+    "English 6A": "SHBEx 3A",
+    "Filipino 6A": "SHBEx 3A",
+    "SocSci 6A": "SHBEx 3C",
+    "English 6B": "SHBEx 3A",
+    "Filipino 6B": "SHBEx 3C",
+    "SocSci 6B": "SHBEx 3C",
+    "English 6C": "SHBEx 3A",
+    "Filipino 6C": "SHBEx 3A",
+    "SocSci 6C": "SHBEx 3C",
+    "English 6D": "SHBEx 3A",
+    "Filipino 6D": "SHBEx 3C",
+    "SocSci 6D": "SHBEx 3C",
+    "English 6E": "SHBEx 3A",
+    "Filipino 6E": "SHB 405",
+    "SocSci 6E": "SHBEx 3C",
+    "English 6F": "SHBEx 3A",
+    "Filipino 6F": "SHBEx 3A",
+    "SocSci 6F": "SHBEx 3C",
+    "English 6G": "SHBEx 3A",
+    "Filipino 6G": "SHBEx 3B",
+    "SocSci 6G": "SHBEx 3C",
+    "English 6H": "SHBEx 3A",
+    "Filipino 6H": "SHBEx 3B",
+    "SocSci 6H": "SHBEx 3C",
+    "Math 6.2A": "SHB 406",
+    "Math 6.1B": "SHB 406",
+    "Math 6.2C": "SHB 406",
+    "Math 6.1D": "SHB 406",
+    "Math 6.2E": "SHB 406",
+    "Math 6.1F": "SHB 406",
+    "Math 6.1G": "SHB 405",
+    "Math 6.1H": "SHB 405",
 }
 
 
@@ -353,10 +422,6 @@ $("#generate").click(function(){
                     index: index,
                     text: val
                 }));
-                $("#mblock").append($("<option>", {
-                    index: index,
-                    text: (val === "E" ? "2" : "1") + val
-                }));
             });
             $.each(b3_am, function(index, val){
                 $("#elective").append($("<option>", {
@@ -383,10 +448,6 @@ $("#generate").click(function(){
                     index: index,
                     text: val
                 }));
-                $("#mblock").append($("<option>", {
-                    index: index,
-                    text: (val === "A"  || val === "C" ? "2" : "1") + val
-                }));
             });
             $.each(b3_pm, function(index, val){
                 $("#elective").append($("<option>", {
@@ -408,6 +469,12 @@ $("#generate").click(function(){
             });
         }
         if ($("#shift").val() === "0" && $("#grade").val() === "11") {
+            $.each(["E", "F", "G", "H"], function(index, val){
+                $("#mblock").append($("<option>", {
+                    index: index,
+                    text: (val === "G"  || val === "H" ? "2" : "1") + val
+                }));
+            });
             $.each(r2_am, function(index, val){
                 $("#res").append($("<option>", {
                     index: index,
@@ -434,6 +501,12 @@ $("#generate").click(function(){
             });
         }
         if ($("#shift").val() === "1" && $("#grade").val() === "11") {
+            $.each(["A", "B", "C", "D"], function(index, val){
+                $("#mblock").append($("<option>", {
+                    index: index,
+                    text: (val === "D" ? "2" : "1") + val
+                }));
+            });
             $.each(r2_pm, function(index, val){
                 $("#res").append($("<option>", {
                     index: index,
@@ -460,6 +533,12 @@ $("#generate").click(function(){
             });
         }
         if ($("#shift").val() === "0" && $("#grade").val() === "12") {
+            $.each(["E", "F", "G", "H"], function(index, val){
+                $("#mblock").append($("<option>", {
+                    index: index,
+                    text: (val === "E" ? "2" : "1") + val
+                }));
+            });
             $.each(r3_am, function(index, val){
                 $("#res").append($("<option>", {
                     index: index,
@@ -498,6 +577,12 @@ $("#generate").click(function(){
             });
         }
         if ($("#shift").val() === "1" && $("#grade").val() === "12") {
+            $.each(["A", "B", "C", "D"], function(index, val){
+                $("#mblock").append($("<option>", {
+                    index: index,
+                    text: (val === "A" || val === "C" ? "2" : "1") + val
+                }));
+            });
             $.each(r3_pm, function(index, val){
                 $("#res").append($("<option>", {
                     index: index,
@@ -579,6 +664,9 @@ $("#res").change(function(){
     $("." + lec).text(subj + $(this).find("option:selected").text());
     $("." + lab).text(subj + $(this).find("option:selected").text());
     $("." + lec + "-res").text(subj + $(this).find("option:selected").text());
+    $("." + lab).append("<br><span class='small'>Lab • " + rooms[subj + $(this).find("option:selected").text()] + "</span>");
+    $("." + lec).append("<br><span class='small'>Lecture • " + rooms[subj + $(this).find("option:selected").text()] + "</span>");
+    $("." + lec + "-res").append("<br><span class='small'>Lecture • " + rooms[subj + $(this).find("option:selected").text()] + "</span>");
     $.each(sched[lec].css, function(key2, value2){
         $("." + lec).css(key2, value2);
         $("." + lec + "-res").css(key2, value2);
@@ -602,9 +690,15 @@ $("#hblock").change(function(){
     var eng = "h" + slots[block][1];
     var fil = "h" + slots[block][2];
     var ss = "h" + slots[block][3];
-    $("." + eng).text("English " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
-    $("." + fil).text("Filipino " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
-    $("." + ss).text("SocSci " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text());
+    var eng_name = "English " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text();
+    var fil_name = "Filipino " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text();
+    var ss_name = "SocSci " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text()
+    $("." + eng).text(eng_name);
+    $("." + fil).text(fil_name);
+    $("." + ss).text(ss_name);
+    $("." + eng).append("<br><span class='small'>" + rooms[eng_name] + "</span>");
+    $("." + fil).append("<br><span class='small'>" + rooms[fil_name] + "</span>");
+    $("." + ss).append("<br><span class='small'>" + rooms[ss_name] + "</span>");
     $.each(sched[eng].css, function(key2, value2){
         $("." + eng).css(key2, value2);
     });
@@ -630,7 +724,9 @@ $("#mblock").change(function(){
     if ($("#shift").val() === "0") var sched = sched_b;
     if ($("#shift").val() === "1") var sched = sched_a;
     var math = "h" + slots[block][0];
-    $("." + math).text("Math " + ($("#grade").val() === "11" ? "5." : "6.") + $(this).find("option:selected").text());
+    var name = "Math " + ($("#grade").val() === "11" ? "5." : "6.") + $(this).find("option:selected").text()
+    $("." + math).text(name);
+    $("." + math).append("<br><span class='small'>" + rooms[name] + "</span>");
     $.each(sched[math].css, function(key2, value2){
         $("." + math).css(key2, value2);
     });
@@ -656,6 +752,8 @@ $("#core").change(function(){
     var lab = "sb" + block;
     $("." + lec).text($(this).find("option:selected").text());
     $("." + lab).text($(this).find("option:selected").text());
+    $("." + lab).append("<br><span class='small'>Lab • " + rooms[$(this).find("option:selected").text()] + "</span>");
+    $("." + lec).append("<br><span class='small'>Lecture • " + rooms[$(this).find("option:selected").text()] + "</span>");
     $.each(sched[lec].css, function(key2, value2){
         $("." + lec).css(key2, value2);
         $("." + lab).css(key2, value2);
@@ -682,6 +780,8 @@ $("#elective").change(function(){
     var lab = "sb" + block;
     $("." + lec).text($(this).find("option:selected").text());
     $("." + lab).text($(this).find("option:selected").text());
+    $("." + lab).append("<br><span class='small'>Lab • " + rooms[$(this).find("option:selected").text()] + "</span>");
+    $("." + lec).append("<br><span class='small'>Lecture • " + rooms[$(this).find("option:selected").text()] + "</span>");
     $.each(sched[lec].css, function(key2, value2){
         $("." + lec).css(key2, value2);
         $("." + lab).css(key2, value2);
