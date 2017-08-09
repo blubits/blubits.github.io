@@ -229,7 +229,7 @@ var blocks_11 = {
     "d": "feda",
     "e": "uzyv",
     "f": "yuzx",
-    "g": "vvwu",
+    "g": "yvwu",
     "h": "zwxy"
 }
 
@@ -597,7 +597,7 @@ $("#mblock").change(function(){
     if ($("#shift").val() === "0") var sched = sched_b;
     if ($("#shift").val() === "1") var sched = sched_a;
     var math = "h" + slots[block][0];
-    $("." + math).text("Math " + ($("#grade").val() === "11" ? "5." : "6.") + + $(this).find("option:selected").text());
+    $("." + math).text("Math " + ($("#grade").val() === "11" ? "5." : "6.") + $(this).find("option:selected").text());
     $.each(sched[math].css, function(key2, value2){
         $("." + math).css(key2, value2);
     });
