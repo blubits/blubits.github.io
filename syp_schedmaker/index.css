@@ -29,6 +29,10 @@ form {
     margin-top: 30px;
 }
 
+table {
+    background: white;
+}
+
 table#schedule td.br {
     background-color: #000000;
     color: #FFFFFF;
@@ -38,4 +42,8 @@ table#schedule td.br {
 table#schedule td.all {
     background-color: gray;
     font-size: 1.25rem;
+}
+
+a.hidden {
+    display: none;
 }
