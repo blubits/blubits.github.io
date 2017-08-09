@@ -293,7 +293,7 @@ var rooms = {
     "Physics 4.2Y": "SHB 101",
     "Physics 4.2Z": "SHB 101",
     "CompSci 5C": "Samsung Lab",
-    "Compsci 5X": "Samsung Lab",
+    "CompSci 5X": "Samsung Lab",
     "Engg C": "SHB 410",
     "Engg Y": "SHB 410",
     "Tech A": "TBA",
@@ -369,7 +369,7 @@ var rooms = {
 
 
 $("#shift").change(function(){
-    if (this.value === 0) {
+    if (this.value === "0") {
         var curr = sched_b;
         var other = sched_a;
     } else {
@@ -389,6 +389,24 @@ $("#shift").change(function(){
         });
     });
 });
+
+$("#clear").click(function(){
+    $.each(["#core", "#elective", "#res", "#hblock", "#mblock"], function(index, val){
+        $(val).prop('selectedIndex', 0);
+    })
+    $.each(sched_a, function(key1, value1){
+        $.each(reset_css, function(key2, value2){
+            $("." + key1).css(key2, value2);
+            $("." + key1).text("");
+        });
+    });
+    $.each(sched_b, function(key1, value1){
+        $.each(reset_css, function(key2, value2){
+            $("." + key1).css(key2, value2);
+            $("." + key1).text("");
+        });
+    });
+})
 
 $("#generate").click(function(){
     if ($("#shift").val() !== null && $("#grade").val() !== null) {
