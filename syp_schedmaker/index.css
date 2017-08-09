@@ -1,0 +1,41 @@
+table#schedule {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 1%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#schedule thead tr th {
+    width: 12rem;
+    text-align: center;
+}
+
+#schedule td {
+    text-align: center;
+}
+
+#schedule thead:first-child tr:first-child th:first-child {
+    width: auto;
+}
+
+table#schedule th, table#schedule td {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    font-size: 1.5rem;
+}
+
+form {
+    margin-top: 30px;
+}
+
+table#schedule td.br {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+table#schedule td.all {
+    background-color: gray;
+    font-size: 1.25rem;
+}

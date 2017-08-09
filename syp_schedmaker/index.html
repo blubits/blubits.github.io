@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>PSHS-MC SYP Schedule Maker</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" /> 
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table id="schedule">
+            <thead>
+              <tr>  
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>       
+            </thead>
+            <tbody>
+              <tr> 
+                <th>7:20-7:40am</th>
+                <td class="all">Flag ceremony</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr> <!-- 1 -->
+                <th>7:40-8:30am</th>
+                <td class="ha sca"></td>
+                <td class="hd sba"></td>
+                <td class="ha sbb"></td>
+                <td class="hd sbc"></td>
+                <td class="ha sca"></td>
+              </tr>
+              <tr> <!-- 2 -->
+                <th>8:30-9:20am</th>
+                <td class="hb scb"></td>
+                <td class="he sba sba-text"></td>
+                <td class="he sbb sbb-text"></td>
+                <td class="he sbc sbc-text"></td>
+                <td class="hd scb"></td>
+              </tr>
+              <tr>
+                <th>9:20-9:40am</th>
+                <td colspan="5" class="br">Break</td>
+              </tr>
+              <tr> <!-- 3 -->
+                <th>9:40-10:30am</th>
+                <td class="hc scc"></td>
+                <td class="hb sba"></td>
+                <td class="hc sbb"></td>
+                <td class="hb sbc"></td>
+                <td class="hc scc"></td>
+              </tr>
+              <tr> <!-- 4 -->
+                <th>10:30-11:20am</th>
+                <td></td>
+                <td class="hf"></td>
+                <td class="hf"></td>
+                <td class="hf"></td>
+                <td class="br" rowspan=3>Universal Break</td>
+              </tr>
+              <tr> <!-- 5 -->
+                <th>11:20am-12:10pm</th>
+                <td class="all">ASA meeting</td>
+                <td class="hu"></td>
+                <td class="hu"></td>
+                <td class="hu"></td>
+              </tr>
+              <tr> <!-- 6 -->
+                <th>12:10-1:00pm</th>
+                <td colspan=4 class="br">Lunch</td>
+              </tr>
+              <tr> <!-- 7 -->
+                <th>1:00-1:50pm</th>
+                <td class="scx hv"></td>
+                <td class="sbx hy"></td>
+                <td class="sby hv"></td>
+                <td class="sbz hy"></td>
+                <td class="scx hv"></td>
+              </tr>
+              <tr>
+                <th>1:50-2:10pm</th>
+                <td colspan="5" class="br">Break</td>
+              </tr>
+              <tr> <!-- 8 -->
+                <th>2:10-3:00pm</th>
+                <td class="scy hw"></td>
+                <td class="sbx sbx-text hz"></td>
+                <td class="sby sby-text hz"></td>
+                <td class="sbz sbz-text hz"></td>
+                <td class="scy hy"></td>
+              </tr>
+              <tr> <!-- 9 -->
+                <th>3:00-3:50pm</th>
+                <td class="scz hx"></td>
+                <td class="sbx hw"></td>
+                <td class="sby hx"></td>
+                <td class="sbz hw"></td>
+                <td class="scz hx"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <form class="form-horizontal">
+          <div class="form-group" id="type">
+            <label for="shift" class="col-md-2 control-label">Schedule shift</label>
+            <div class="col-md-3">
+              <select class="form-control" name="shift" id="shift">
+                <option style="display: none" selected disabled></option>
+                <option value="0">AM science/PM core subjects</option>
+                <option value="1">PM science/AM core subjects</option>
+              </select>
+            </div>
+            <label for="grade" class="col-md-1 control-label">Grade</label>
+            <div class="col-md-1">
+              <select class="form-control" name="grade" id="grade">
+                <option style="display: none" selected disabled></option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="col-md-2 col-md-offset-3">
+              <button class="btn btn-primary" id="generate" type="button">Generate subjects</button>  
+            </div>
+          </div>
+          <div class="form-group" id="sciences" style="display: none">
+            <label for="core" class="col-md-2 control-label">Core science</label>
+            <div class="col-md-2">
+              <select class="form-control" name="core" id="core">
+              </select>
+            </div>
+            <label for="elective" class="col-md-2 control-label">Elective</label>
+            <div class="col-md-2">
+              <select class="form-control" name="elective" id="elective">
+              </select>
+            </div>
+            <label for="res" class="col-md-2 control-label">Research</label>
+            <div class="col-md-1">
+              <select class="form-control" name="res" id="res">
+              </select>
+            </div>
+          </div>
+          <div class="form-group" id="hummath" style="display: none">
+            <label for="hblock" class="col-md-2 control-label">Humanities block</label>
+            <div class="col-md-1">
+              <select class="form-control" name="hblock" id="hblock">
+              </select>
+            </div>
+            <label for="mblock" class="col-md-3 control-label">Math block</label>
+            <div class="col-md-1">
+              <select class="form-control" name="mblock" id="mblock">
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center" id="status">Status: All good!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+
+  </body>
+</html>
