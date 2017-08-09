@@ -406,6 +406,7 @@ $("#clear").click(function(){
             $("." + key1).text("");
         });
     });
+    $("#save").css("display", "none");
 })
 
 $("#generate").click(function(){
@@ -806,3 +807,59 @@ $("#elective").change(function(){
     });
     elec_prev = block;
 });
+
+// Save sched as image
+function checkIfReady(){
+    var dropdowns = $("#sciences select, #hummath select"),
+        ready = true;
+    for (var i = 0; i < dropdowns.length; i++) {
+        var value = $(dropdowns[i]).val();
+        if (value === null || value.length == 0) {
+            ready = false;
+            break;
+        }
+    }
+
+    if (ready)
+        $("#save").removeAttr("style");
+    else
+        $("#save").css("display", "none");
+};
+$("#sciences select, #hummath select").each(function(){
+    $(this).change(checkIfReady);
+});
+$("#save").click(function(){
+    html2canvas(document.getElementById("schedule"), {
+        width: 1000,
+        background: "#ffffff",
+        onrendered: function(c){
+            var dataUrl = c.toDataURL(),
+                isFileSaverSupported = !!new Blob;
+
+            if (isAppleMobile() || !isFileSaverSupported)
+                window.location.href = dataUrl;
+            else {
+                var data = atob(dataUrl.substring(22)),
+                    dataArr = new Uint8Array(data.length);
+
+                for (var i = 0; i < data.length; i++)
+                    dataArr[i] = data.charCodeAt(i);
+
+                var dataBlob = new Blob([dataArr.buffer], {
+                    "type": "image/png"
+                });
+                saveAs(dataBlob, "sched.png");
+            }
+        }
+    })
+});
+
+// Detect iOS Safari (does not support native downloads)
+function isAppleMobile() {
+    // https://stackoverflow.com/a/29696509
+    var ua = window.navigator.userAgent;
+    var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+    var webkit = !!ua.match(/WebKit/i);
+    var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+    return iOSSafari;
+};
