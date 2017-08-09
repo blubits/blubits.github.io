@@ -244,6 +244,27 @@ var blocks_12 = {
     "h": "zyvu"
 }
 
+// Rooms
+var rooms = {
+    "AgriAqua B": "ASTB 302",
+    "Research 2A1": "ASTB 201",
+    "Research 2A2": "SHBEx 3B",
+    "Research 2B": "ASTB 201",
+    "Research 2C": "ASTB 201",
+    "Research 2X": "ASTB 201",
+    "Research 2Y": "ASTB 201",
+    "Research 2Z1": "ASTB 201",
+    "Research 2Z2": "ASTB 304",
+    "Research 3A1": "ASTB 203",
+    "Research 3A2": "SHB 108",
+    "Research 3B": "ASTB 203",
+    "Research 3C": "ASTB 203",
+    "Research 3X1": "ASTB 203",
+    "Research 3X2": "ASTB 304",
+    "Research 3Y": "ASTB 203",
+    "Research 3Z": "ASTB 203",
+}
+
 
 $("#shift").change(function(){
     if (this.value === 0) {
@@ -524,8 +545,10 @@ $("#res").change(function(){
     if ($("#grade").val() === "12") var subj = "Research 3"
     $("." + lec).text(subj + $(this).find("option:selected").text());
     $("." + lab).text(subj + $(this).find("option:selected").text());
+    $("." + lec + "-res").text(subj + $(this).find("option:selected").text());
     $.each(sched[lec].css, function(key2, value2){
         $("." + lec).css(key2, value2);
+        $("." + lec + "-res").css(key2, value2);
         $("." + lab).css(key2, value2);
     });
     res_prev = block;
