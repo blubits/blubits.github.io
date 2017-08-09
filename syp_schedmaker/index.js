@@ -830,7 +830,6 @@ $("#sciences select, #hummath select").each(function(){
 });
 $("#save").click(function(){
     html2canvas(document.getElementById("schedule"), {
-        width: 1000,
         background: "#ffffff",
         onrendered: function(c){
             var dataUrl = c.toDataURL(),
