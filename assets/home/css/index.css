@@ -1,8 +1,5 @@
-body {
-    background-color: #F4F4F4;
-    color: #111111;
-}
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
 
-a {
-    color: #003872; /** darken($accent, 10) **/
+.space-mono {
+    font-family: "Space Mono", monospace;
 }

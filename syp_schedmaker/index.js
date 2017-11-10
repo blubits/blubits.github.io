@@ -407,6 +407,7 @@ $("#clear").click(function(){
         });
     });
     $("#save").css("display", "none");
+    var core_prev = "", elec_prev = "", res_prev = "", hblock_prev = "", mblock_prev = "";
 })
 
 $("#generate").click(function(){
@@ -711,15 +712,16 @@ $("#hblock").change(function(){
     var ss = "h" + slots[block][3];
     var eng_name = "English " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text();
     var fil_name = "Filipino " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text();
-    var ss_name = "SocSci " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text()
-    $("." + eng).text(eng_name);
+    var ss_name = "SocSci " + ($("#grade").val() === "11" ? "5" : "6") + $(this).find("option:selected").text();
+    var is_12a = $("#grade").val() === "12" && block === "a"
+    $("." + eng + (is_12a ? "a" : "")).text(eng_name);
     $("." + fil).text(fil_name);
     $("." + ss).text(ss_name);
-    $("." + eng).append("<br><span class='small'>" + rooms[eng_name] + "</span>");
+    $("." + eng + (is_12a ? "a" : "")).append("<br><span class='small'>" + rooms[eng_name] + "</span>");
     $("." + fil).append("<br><span class='small'>" + rooms[fil_name] + "</span>");
     $("." + ss).append("<br><span class='small'>" + rooms[ss_name] + "</span>");
     $.each(sched[eng].css, function(key2, value2){
-        $("." + eng).css(key2, value2);
+        $("." + eng + (is_12a ? "a" : "")).css(key2, value2);
     });
     $.each(sched[fil].css, function(key2, value2){
         $("." + fil).css(key2, value2);
@@ -820,17 +822,24 @@ function checkIfReady(){
         }
     }
 
-    if (ready)
-        $("#save").removeAttr("style");
-    else
-        $("#save").css("display", "none");
+    if (ready) {
+        $("#save_png").removeAttr("style");
+        $("#save_excel").removeAttr("style");
+    } else {
+        $("#save_png").css("display", "none");
+        $("#save_excel").css("display", "none");
+    }
 };
+
+// (c) @aureljared thanks!!
+
 $("#sciences select, #hummath select").each(function(){
     $(this).change(checkIfReady);
 });
-$("#save").click(function(){
+
+$("#save_png").click(function(){
     html2canvas(document.getElementById("schedule"), {
-        width: 1000,
+        width: $("#schedule").width(),
         background: "#ffffff",
         onrendered: function(c){
             var dataUrl = c.toDataURL(),
@@ -852,6 +861,22 @@ $("#save").click(function(){
             }
         }
     })
+});
+
+$("save_excel").click(function(e){
+    console.log("henlo there");
+    e.preventDefault();
+
+    //getting data from our table
+    console.log("i booped u");
+    var data_type = 'data:application/vnd.ms-excel';
+    var table_div = document.getElementById('schedule');
+    var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+    var a = document.createElement('a');
+    a.href = data_type + ', ' + table_html;
+    a.download = 'exported_table_' + Math.floor((Math.random() * 9999999) + 1000000) + '.xls';
+    a.click();
 });
 
 // Detect iOS Safari (does not support native downloads)
